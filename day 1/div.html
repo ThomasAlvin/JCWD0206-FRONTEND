@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+   a {
+    color: red;
+   }
+
+   a[href] {
+    color: yellow;
+   }
+   /* div dalam style disebut selector */
+   div {
+    color: aqua;
+   }
+   .paragraf {
+    font-size: 20px;
+    color: brown;
+   }
+   #pData3 {
+    color: cadetblue;
+    font-family: 'Courier New', Courier, monospace;
+   }
+
+   body {
+    /* background-color: greenyellow; */
+    /* background-color: rgb(11, 177, 36); */
+    /* background: linear-gradient(45deg, rgba(3, 141, 113, 0.5), blue); */
+    background: url('img/cat.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+   }
+
+   .konten {
+    background-color: rgba(3, 141, 113, 0.5);
+    width: 900px;
+    height: 100px;
+   }
+  </style>
+  <title>Division</title>
+ </head>
+ <body>
+  <!-- semua yang ada di dalam div1 akan memiliki font berwarna hijau -->
+  <div style="color: green">div1</div>
+  <div>div2</div>
+  <div>div3</div>
+  <p>paragraf</p>
+  <p class="paragraf">data 1</p>
+  <p class="paragraf2 paragraf">data 2</p>
+  <p class="paragraf" id="pData3">data 3</p>
+  <a href="#"> Jaya Jaya Jaya</a>
+
+  <div class="konten">
+   <center>halo semuanya</center>
+  </div>
+ </body>
+</html>

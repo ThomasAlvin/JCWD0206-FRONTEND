@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic HTML</title>
+ </head>
+ <body>
+  <p>My cat is very grumpy</p>
+
+  <!-- headings -->
+  <h1>this is heading 1</h1>
+  <h2>this is heading 2</h2>
+  <h3>this is heading 3</h3>
+  <h4>this is heading 4</h4>
+  <h5>this is heading 5</h5>
+  <h6>this is heading 6</h6>
+
+  <!-- paragraf -->
+  <p>paragraf 1</p>
+  <p>paragraf 2</p>
+  <!-- horizontal line -->
+  <hr />
+  ini baris 1
+  <!-- break line = new line  -->
+  <br />
+  ini baris 2
+
+  <!-- html text formatting -->
+  <hr />
+  <b>ini bold</b> <br />
+  <strong>ini strong</strong> <br />
+  <i>ini italic</i> <br />
+  <em>ini emphasized</em> <br />
+  <mark>ini mark</mark> <br />
+  <small>ini small</small> <br />
+  <del>ini deleted</del> <br />
+  <ins>ini inserted</ins> <br />
+  12 <sub>ini subscript</sub> <br />
+  12 <sup>ini superscript</sup> <br />
+  <hr />
+
+  <!-- unordered list -->
+  <h1>Daftar Belanja</h1>
+  <ul>
+   <li>Beras</li>
+   <li>Minyak Goreng</li>
+   <li>Gula</li>
+   <li>Santan</li>
+  </ul>
+  <!-- ordered list -->
+  <h1>Ranking Purwadhika</h1>
+  <ol>
+   <li>Baraak</li>
+   <li>Mikhael</li>
+   <li>Christopher</li>
+  </ol>
+
+  <!-- table -->
+  <table>
+   <tr>
+    <th>Nama</th>
+    <th>TTL</th>
+    <th>Hobi</th>
+    <th>Kelamin</th>
+   </tr>
+   <tr>
+    <td>Chris</td>
+    <td>Jakarta, 30 Okt 2000</td>
+    <td>Looting</td>
+    <td>Pria</td>
+   </tr>
+  </table>
+
+  <!-- table colspan -->
+  <table>
+   <tr>
+    <th>Nama</th>
+    <th>TTL</th>
+    <th>Hobi</th>
+   </tr>
+
+   <tr>
+    <!-- colspan = merge 3 cell -->
+    <td colspan="3"><center>Galih</center></td>
+    <td>Mancing</td>
+   </tr>
+  </table>
+
+  <!-- rowspan -->
+
+  <table>
+   <tr>
+    <th rowspan="3">Nama</th>
+    <th>TTL</th>
+    <th>Hobi</th>
+   </tr>
+
+   <tr>
+    <td><center>Galih</center></td>
+    <td><center>Batam, 29 feb 2000</center></td>
+    <td>Mancing</td>
+   </tr>
+  </table>
+
+  <!-- anchor tags -->
+
+  <!-- absolute links -->
+  <p>
+   <!-- redirect ke href -->
+   <a href="https://www.w3schools.com/html/html_favicon.asp">
+    Link W3SCHOOL FAVICON
+   </a>
+  </p>
+  <p>
+   <!-- redirect new tab -->
+   <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">
+    Link W3SCHOOL Links
+   </a>
+  </p>
+
+  <!-- relative links -->
+  <p>
+   <a href="contoh.html">Contoh Relative Links</a>
+  </p>
+  <p>
+   <a href="./contoh2.html" target="_blank">
+    Contoh Relative Links with New Tab
+   </a>
+  </p>
+
+  <!-- images -->
+  <img
+   width="300px"
+   height="300px"
+   src="./img/cat.pngssss"
+   alt="ini gambar kucing"
+  />
+  <img
+   width="300px"
+   height="300px"
+   src="./img/tiger.png"
+   alt="ini gambar macan"
+  />
+
+  <br />
+
+  <!-- figure -->
+  <figure>
+   <img
+    width="100%"
+    height="300px"
+    src="https://asset.kompas.com/crops/vqIir_73PEZ4S2Pm8FjfbvXu_vg=/100x32:900x566/750x500/data/photo/2020/02/25/5e54df09c9ae8.jpg"
+    alt="ini gambar dari internet"
+   />
+   <figcaption>ini adalah gambar ikan paus</figcaption>
+  </figure>
+ </body>
+</html>

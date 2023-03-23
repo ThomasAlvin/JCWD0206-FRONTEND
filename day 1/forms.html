@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form</title>
+ </head>
+ <body>
+  <h1>Form</h1>
+  <form action="" method="post" id="frmRegister">
+   <fieldset>
+    <legend>Register</legend>
+    <table>
+     <tr>
+      <th>
+       <label for="inputNama">Nama</label>
+      </th>
+      <td><input type="text" name="inputNama" id="txtNama" /></td>
+     </tr>
+     <tr>
+      <th>Email</th>
+      <td><input type="text" name="input" id="txtEmail" /></td>
+     </tr>
+
+     <tr>
+      <th>Password</th>
+      <td><input type="password" name="input" id="txtPassword" /></td>
+     </tr>
+
+     <tr>
+      <th></th>
+      <td>
+       Front End <input type="checkbox" name="cb" id="cbFE" /> Back End
+       <input type="checkbox" name="cb" id="cbBE" />
+      </td>
+     </tr>
+
+     <tr>
+      <th>Gender</th>
+      <td>
+       Pria <input type="radio" name="radio" id="rdFE" /> Wanita
+       <input type="radio" name="radio" id="rdBE" />
+      </td>
+     </tr>
+
+     <tr>
+      <th>Umur</th>
+      <td>
+       <input type="number" name="input" id="txtUmur" />
+      </td>
+     </tr>
+
+     <tr>
+      <th>Alamat</th>
+      <td>
+       <textarea name="input" id="taAlamat" cols="21" rows="5"></textarea>
+      </td>
+     </tr>
+
+     <tr>
+      <th>Agama</th>
+      <td>
+       <select name="select" id="slcAgama">
+        <option value="1">Islam</option>
+        <option value="2">Kristen</option>
+        <option value="3">Budha</option>
+        <option selected value="4">Hindu</option>
+        <option value="5">Konghucu</option>
+       </select>
+      </td>
+     </tr>
+
+     <tr>
+      <td colspan="2">
+       <center>
+        <!-- <input type="submit" value="Submit" id="btnSubmit" /> -->
+        <!-- <input type="button" value="OK" onclick="ok()" /> -->
+        <button onclick="ok()">SUBMIT</button>
+       </center>
+      </td>
+     </tr>
+    </table>
+   </fieldset>
+  </form>
+ </body>
+ <script>
+  function ok() {
+   let nama = document.getElementById('txtNama');
+   alert(nama.value);
+  }
+ </script>
+</html>

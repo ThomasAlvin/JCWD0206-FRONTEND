@@ -1,0 +1,14 @@
+/* div dan p adalah selector */
+
+div {
+ color: red;
+}
+
+p {
+ color: blueviolet;
+}
+
+.paragraf2 {
+ font-size: 20px;
+ color: pink;
+}
