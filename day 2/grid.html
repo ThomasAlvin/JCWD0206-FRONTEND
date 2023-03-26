@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid</title>
+  <style>
+   #content {
+    max-width: 900px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: black;
+    display: grid;
+    /* grid-template-columns: 33% 33% 33%; */
+    /* grid-template-columns: 0.5fr 0.5fr 2fr 1fr; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: repeat(3, 1fr); */
+    /* grid-template-rows: 100px 200px 300px; */
+    /* grid-template-rows: 1fr 2fr 3fr; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-auto-rows: 150px; */
+    /* grid-column-gap: 20px;
+    grid-row-gap: 10px; */
+    grid-gap: 10px;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    /* grid-template-rows: 400px 80px; */
+   }
+   .kotak {
+    display: inline;
+    /* width: ; */
+   }
+   .kotak1 {
+    grid-column-start: 1;
+    grid-column-end: 10;
+   }
+   .kotak2 {
+    height: 300px;
+    width: 300px;
+    /* grid-column: 4/10; */
+    grid-row: 2/3;
+   }
+   body {
+    color: white;
+    text-align: center;
+   }
+   #content div {
+    background: lightskyblue;
+    /* padding: 30px; */
+   }
+   #content div:nth-child(even) {
+    background: grey;
+   }
+  </style>
+ </head>
+ <body>
+  <div id="content">
+   <div class="kotak1">
+    <img
+     width="100%"
+     height="100%"
+     src="https://static.vecteezy.com/system/resources/previews/002/393/980/original/corporate-banner-with-modern-design-free-vector.jpg"
+     alt="banner"
+    />
+   </div>
+   <div class="kotak2">
+    <div>judul</div>
+    <img
+     src="https://cdn1-production-images-kly.akamaized.net/tc-nn-mJ1_b2g5s9xQLwPbVfJh4=/1200x1200/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3421370/original/062776600_1617710503-WhatsApp_Image_2021-04-06_at_3.45.04_PM.jpeg"
+     alt="gambar ayam"
+     width="200px"
+     height="150px"
+    />
+    <div>Rp.100000</div>
+    <!-- <div></div> -->
+    <div>penjual ayam potong</div>
+
+    <!-- <p>judul</p> -->
+    <!-- <h1>judul</h1> -->
+    <!-- <h2>harga</h2> -->
+   </div>
+   <div class="kotak3">3</div>
+   <div class="kotak4">4</div>
+   <div class="kotak5">5</div>
+   <div class="kotak6">6</div>
+   <div class="kotak7">7</div>
+   <div class="kotak8">8</div>
+   <div class="kotak9">9</div>
+   <div class="kotak9">9</div>
+   <div class="kotak9">9</div>
+   <div class="kotak9">9</div>
+   <div class="kotak9">9</div>
+   <div class="kotak9">9</div>
+
+   <!-- <div class="kotak10">10</div> -->
+  </div>
+ </body>
+</html>

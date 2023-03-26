@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+   img {
+    width: 200px;
+    height: 150px;
+   }
+   table,
+   tr,
+   th,
+   td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    min-width: 100px;
+    background-color: orange;
+   }
+   span {
+    cursor: pointer;
+   }
+  </style>
+ </head>
+ <body>
+  <center>
+   <table>
+    <tr>
+     <th>No.</th>
+     <th>Image</th>
+     <th>Name</th>
+     <th>Food</th>
+     <th>Group</th>
+    </tr>
+
+    <tr>
+     <td>1</td>
+     <td><img src="../img/cat.png" alt="gambar kucing" /></td>
+     <td>Smiling <sup>Cat</sup></td>
+     <td><sup>Healthy</sup> Fish</td>
+     <td>
+      <input type="radio" name="cat" checked /> Vertebrate
+      <input type="radio" name="cat" /> Invertebrate
+     </td>
+    </tr>
+
+    <tr>
+     <td>2</td>
+     <td>
+      <img
+       src="https://awsimages.detik.net.id/community/media/visual/2022/08/31/anjing-lucu-dan-menggemaskan-7.jpeg?w=640"
+       alt="gambar anjing"
+      />
+     </td>
+     <td>Happy <sup>Dog</sup></td>
+     <td><sup>Fresh</sup>Meat</td>
+     <td>
+      <input type="radio" name="dog" checked /> Vertebrate
+      <input type="radio" name="dog" /> Invertebrate
+     </td>
+    </tr>
+
+    <tr>
+     <td>3</td>
+     <td>
+      <img
+       src="https://asset.kompas.com/crops/GeAfgRUGiH6VyEumS4Gl7w4OcR8=/0x0:780x390/750x500/data/photo/2013/03/04/1556122-simpanse-780x390.jpg"
+       alt="gambar simp"
+      />
+     </td>
+     <td>Confuse <sup>Simpanse</sup></td>
+     <td><sup>Sweet</sup>Banana</td>
+     <td>
+      <input type="radio" name="simp" checked /> Vertebrate
+      <input type="radio" name="simp" /> Invertebrate
+     </td>
+    </tr>
+
+    <tr>
+     <td>4</td>
+     <td>
+      <img
+       src="https://asset.kompas.com/crops/Viw4ZLazn2EKIcVXk_s4MOcZToY=/0x0:780x520/750x500/data/photo/2019/05/23/3115135182.jpg"
+       alt="gambar jelly"
+      />
+     </td>
+     <td>Frisky <sup>Jellyfish</sup></td>
+     <td><sup>Saltwater</sup>Plankton</td>
+     <td>
+      <span name="jelly" onclick="change(this)">
+       <input type="radio" name="jelly" id="jellyVertebrate" />Vertebrate
+      </span>
+      <span name="jelly" onclick="change(this)">
+       <input type="radio" name="jelly" id="jellyInvertebrate" />Invertebrate
+      </span>
+     </td>
+    </tr>
+
+    <tr>
+     <td>5</td>
+     <td>
+      <img
+       src="https://asset.kompas.com/crops/-js7yGVUi0it0qiJaa2doS-7Z90=/0x0:0x0/375x240/data/photo/2021/06/27/60d7ec121a2b3.jpg"
+       alt="gambar cumi"
+      />
+     </td>
+     <td>Swimming <sup>Squid</sup></td>
+     <td><sup>Salt</sup>Fish</td>
+     <td>
+      <input type="radio" name="squid" /> Vertebrate
+      <input type="radio" name="squid" checked="checked" /> Invertebrate
+     </td>
+    </tr>
+   </table>
+  </center>
+ </body>
+ <script>
+  function change(input) {
+   // input = this. this = span yg ada radionya
+   const kelas = input.getAttribute('name');
+   //jelly
+   const value = input.innerText.replace(/ /, '');
+   //invertebrate/vertebrate
+   if (value == 'Vertebrate') {
+    document.getElementById(kelas + value).checked = 'checked';
+   } else {
+    document.getElementById(kelas + value).checked = 'checked';
+   }
+  }
+ </script>
+</html>
