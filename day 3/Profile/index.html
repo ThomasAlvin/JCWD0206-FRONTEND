@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F30 Dieu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+          body{
+            margin: 0px;
+            background-color: black;
+            color: white;
+            overflow:auto;
+        }
+        #navbar {
+            display: flex;
+            background-color: black;
+            color: white;
+            position: fixed;
+            justify-content:space-evenly;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+        }
+
+        #navbar-logo {
+            font-size: 30px;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+
+        #navbar div div {
+            padding: 20px 20px;
+
+            text-align: center;
+            font-size: 18px;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+
+        
+        #navbar div div:hover {
+            background-color: #FF4F41;
+            color: black;
+            
+        }
+
+        
+        #img-grid {
+            /* height: 1000px; */
+            display: grid;
+            grid-template-rows: 9fr 0.7fr 1fr 1fr;
+            background: url("assets/ARF_9648.jpg") no-repeat;
+            background-size:100% auto;
+            top: 0;
+            text-align: center;
+            color: white;
+        }
+        
+        #header {
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .textcontent {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        
+        #car-content {
+            display: grid;
+            padding-top: 8%;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 0 auto;
+            column-gap: 20px;
+            column-gap: 50px;
+            height: 700px;
+            padding-bottom: 5%;
+            
+        }
+
+        #car-content div{
+            height: 350px;
+            width: 350px;
+            margin: 0 auto;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        #car-content div img{
+            border-radius: 50%;
+
+        }
+ p {
+    font-family: sans-serif;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#content-column {
+    display: grid;
+    grid-template-rows: 1fr 0.3fr 1fr;
+}
+
+a {
+  text-decoration:none;
+  color: white
+}
+
+    </style>
+    
+</head>
+<body>
+    <div id="navbar">
+        <div></div>
+        <div style="display:flex;" id="navbar-logo">
+            F30 <label style="color:#FF4F41;padding-left:5px;padding-right: 5px;">DIEU  </label> |  
+            <label style="padding-left: 10px;font-size:15px;padding-top:10px;color:silver;">
+                drive faster than ever
+            </label> 
+        </div>
+
+
+        <div style="display:flex ;">
+            <a href="#img-grid"> 
+            <div>
+                HOME
+             </div>
+             </a>
+
+             <a href="#car-content"> 
+                <div >
+                    SPECIFICATION    
+                </div>
+             </a>
+            
+             <a href="#sosmed"> 
+
+             <div>
+                SOCIAL MEDIA
+             </div>
+             </a>
+        </div>
+    </div>
+    <div id="content-column">
+
+
+    <div id="img-grid">
+        <div></div>
+        
+        <div id="header"> Stance F30 </div>
+        <div class="textcontent">Built With Passion Not For Status!</div>
+        <div></div>
+
+    </div>
+
+    <div id="car-content">
+        <div> <img src="assets/ALF09210.jpg" alt="gambar1" width="100%" height="100%">
+        <p class="textcontent">
+            BIG BRAKE KIT
+        </p>
+        <p>
+            AP Racing Factory brake upgrade kits have been designed for everyday road use and low level trackday use. <br> <br>
+            They are proven to reduce braking effort and give more responsive late braking confidence when used on the track. 
+            They also resist fade after repeated high speed stops, but are still able to cope with day to day motoring.
+            
+        </p>
+    </div>
+
+        <div> <img src="assets/ALF09170.jpg" alt="gambar1" width="100%" height="100%"> 
+            <p class="textcontent">
+            BODY KIT
+            </p> 
+           <p>
+            Prior Design UK provides exclusive styling upgrades and widebody conversions for prestige automotive brands such as Porsche, Mercedes, Audi, Ferrari, McLaren and Lamborghini.
+             Developing and crafting exceptional quality pieces to transform some of the world’s leading vehicles into distinctive and unique automotive finery.
+           </p>
+
+        </div>
+
+        <div> <img src="assets/ALF09147.jpg" alt="gambar1" width="100%" height="100%">
+        <p class="textcontent">
+        WHEELS SPEC
+        </p> 
+        <p>
+            Boldly shaped spokes are reinforced with connection ribs. A high-spec rough mesh that coexists with reliable performance in stylish beauty. 
+            The volume and balance of the opening, which is examined as a 7-junction, is designed with consideration for the way the brake system looks. 
+            " I will respond to the thoughts of style-up freaks who want to produce a feeling of cloggedness.
+        </p>
+        </div>
+    </div>
+    
+    <div id="sosmed">
+        <a href="https://www.instagram.com/f30.dieu/">
+            <img src="assets/RND01147.jpg" style="width: 100%" />
+
+        </a>
+        
+
+    </div>
+
+    
+</div>
+
+</body>
+</html>
+
+

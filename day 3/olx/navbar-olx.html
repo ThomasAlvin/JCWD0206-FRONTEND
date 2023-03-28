@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar</title>
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <style>
+   body {
+    margin: 0px;
+   }
+   .navbar {
+    height: 68px;
+    width: 100vw;
+    background-color: #eff1f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .container {
+    max-width: 1300px;
+    display: flex;
+    gap: 20px;
+   }
+   .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    /* height: 48px; */
+   }
+
+   .flex {
+    display: flex;
+   }
+   .input-icon {
+    display: flex;
+    background-color: white;
+    border: 2px solid #002f34;
+    border-radius: 3px;
+    height: 44px;
+   }
+   .icon {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+   }
+   input {
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    color: #002f34;
+    font-size: 16px;
+   }
+   input:focus + .arrow {
+    transform: rotate(180deg);
+    transition-duration: 0.5s;
+   }
+   .input-icon:has(input:focus) {
+    border: 2px solid #23e5db;
+   }
+   .search {
+    /* sadsada */
+    height: 44px;
+    background-color: #002f34;
+    color: white;
+   }
+   .input-search {
+    width: 634px;
+   }
+   .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: #002f34;
+    height: 48px;
+   }
+   .jual {
+    display: flex;
+    height: 48px;
+    width: 109px;
+   }
+  </style>
+ </head>
+ <body>
+  <div class="navbar">
+   <div class="container">
+    <div class="logo">
+     <img src="./olx-logo.png.png" alt="" width="42px" height="24px" />
+    </div>
+
+    <div class="flex">
+     <div class="input-icon">
+      <i class="fa fa-search icon"></i>
+      <input type="text" placeholder="Cari kota,area, atau lokal" />
+      <i class="fa fa-angle-up icon arrow fa-lg"></i>
+     </div>
+     <div></div>
+    </div>
+
+    <div class="flex">
+     <div class="input-icon">
+      <input
+       type="text"
+       name=""
+       id=""
+       class="input-search"
+       placeholder="Temukan Mobil, Handphone, dan lainnya ..."
+      />
+      <i class="fa fa-search logo search fa-lg"></i>
+     </div>
+     <div></div>
+    </div>
+    <div class="login">Login/daftar</div>
+    <div class="jual">
+     <img height="100%" width="100%" src="./olx-jual.png.png" alt="" />
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Band</title>
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <style>
+   body {
+    margin: 0px;
+   }
+   #navbar {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+   }
+
+   #search {
+    padding: 10px;
+    padding-right: 20px;
+   }
+
+   #search:hover {
+    background-color: #cccccc;
+   }
+
+   #navbar div div {
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    cursor: pointer;
+   }
+
+   #navbar div div:hover {
+    background-color: #cccccc;
+   }
+
+   #img-grid {
+    height: 960px;
+    display: grid;
+    grid-template-rows: 11fr 0.7fr 1fr;
+    background: url('band.jpg');
+    background-size: 100% 100%;
+
+    /* 12.7 = 960px */
+
+    text-align: center;
+    color: white;
+   }
+
+   #header {
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+   #textcontent {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+   }
+
+   #band-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+   }
+
+   #band-header {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+   }
+
+   #band-subheader {
+    font-style: italic;
+    font-family: sans-serif;
+    /* font-weight:lighter; */
+    color: grey;
+   }
+   #band-content-text {
+    font-family: sans-serif;
+    text-align: justify;
+   }
+
+   #img-band {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 40px;
+    justify-items: center;
+   }
+
+   #img-band div {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+   }
+  </style>
+ </head>
+ <body>
+  <div id="navbar">
+   <div style="display: flex">
+    <div>HOME</div>
+    <div>BAND</div>
+    <div>TOUR</div>
+    <div>CONTACT</div>
+    <div>
+     MORE
+     <i class="fa fa-caret-down" style="color: white"> </i>
+    </div>
+   </div>
+
+   <div id="search">
+    <i class="fa fa-search"></i>
+   </div>
+  </div>
+
+  <div id="img-grid">
+   <div></div>
+   <div id="header">Los Angeles</div>
+   <div id="textcontent">We had the best time playing at Venice Beach!</div>
+  </div>
+
+  <div id="band-content">
+   <div></div>
+
+   <div id="band-header">The Band</div>
+
+   <div id="band-subheader">We love music</div>
+   <div id="band-content-text">
+    We have created a fictional band website. Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+    officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed
+    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+    minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+    ea commodo consequat.
+   </div>
+
+   <div id="img-band">
+    <div id="member">
+     <img src="member.jpg" alt="member" width="100%" height="100%" />
+     <p>Name</p>
+    </div>
+    <div id="member">
+     <img src="member.jpg" alt="member" width="100%" height="100%" />
+     <p>Name</p>
+    </div>
+    <div id="member">
+     <img src="member.jpg" alt="member" width="100%" height="100%" />
+     <p>Name</p>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
