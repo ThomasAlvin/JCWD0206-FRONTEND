@@ -83,6 +83,7 @@ body {
  justify-content: center;
  align-items: center;
  width: 48px;
+ cursor: pointer;
 }
 
 .flex {
@@ -150,11 +151,16 @@ input:focus + .arrow {
  color: #002f34;
  height: 48px;
  padding: 0px 7px;
+ cursor: pointer;
 }
 .jual {
  display: flex;
  height: 48px;
  width: 109px;
+ cursor: pointer;
+}
+i {
+ cursor: pointer;
 }
 
 .products {
@@ -180,6 +186,7 @@ input:focus + .arrow {
 }
 
 .card {
+ cursor: pointer;
  max-width: 288px;
  display: flex;
  flex-direction: column;

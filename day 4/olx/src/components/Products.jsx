@@ -34,7 +34,7 @@ export function Products() {
    name: 'BMW 840i Coupe 2022 ISTIMEWA',
    location: 'Kebayon, Jakarta Selatan',
    date: '16 Mar',
-   highlight: false
+   highlight: true
   },
   {
    url: 'https://apollo-singapore.akamaized.net/v1/files/qq117p3ibpmn3-ID/image;s=780x0;q=60',
@@ -110,7 +110,7 @@ export function Products() {
     <div className="recommend">Rekomendasi Baru</div>
     <div className="products">
      {data.map((val, idx) => (
-      <Card key={'product_' + idx} {...val} />
+      <Card key={'product_' + idx} {...val} number={idx + 1} />
      ))}
     </div>
    </div>
@@ -132,7 +132,10 @@ function Card(props) {
     <img src={props.url} alt="" />
    </div>
 
-   <div className="border-yellow">
+   <div
+    className={'border-yellow'}
+    style={props.number > 4 ? { borderColor: 'white' } : null}
+   >
     <div className="sub-product">
      <div className="product-harga">
       Rp {parseInt(props.price).toLocaleString('id-ID')}
