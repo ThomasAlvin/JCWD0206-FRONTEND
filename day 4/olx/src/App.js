@@ -1,14 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/navbar';
+import logo from "./logo.svg";
+import "./App.css";
+import Navbar from "./components/navbar";
+import Test from "./components/Exercise";
 
 function App() {
- return (
-  <>
-   <Navbar />
-   <div></div>
-  </>
- );
+  return (
+    <>
+      <center>
+        <Navbar />
+        <Test />
+      </center>
+    </>
+  );
 }
 
 export default App;
