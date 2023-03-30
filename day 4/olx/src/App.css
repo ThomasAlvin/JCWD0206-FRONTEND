@@ -4,9 +4,11 @@
   display: none;
  }
 }
-@media screen and (min-width: 1250px) {
- .products,
+@media screen and (min-width: 1241px) {
  .recommend {
+  max-width: 1260px;
+ }
+ .products {
   max-width: 1240px;
   padding-left: 20px;
  }
@@ -35,10 +37,37 @@
   max-width: 288px;
  }
 }
+
+.overflowX {
+ overflow-x: scroll;
+ scroll-behavior: smooth;
+ /* padding: 0px 20px; */
+ position: relative;
+}
+
+.tentang {
+ justify-content: space-between;
+ /* width: 80vw; */
+ max-width: 90vw;
+ display: flex;
+ background-color: #ebeeef;
+ display: flex;
+
+ font-family: 'Roboto, Oxygen, Ubuntu, Cantarell, ' Open Sans ',' Helvetica Neue
+  ' sans-serif';
+ /* padding-bottom: 20px; */
+}
+
+.overflowX::-webkit-scrollbar {
+ display: none; /* Safari and Chrome */
+}
+
 .banner {
  margin-top: 20px;
+ margin-bottom: 20px;
+
  height: 252px;
- width: 100vw;
+ width: 100%;
  background-position: 50% 50%;
  background-size: cover;
  background-repeat: no-repeat;
@@ -47,12 +76,14 @@
 
 .recommend {
  font-size: 24px;
- padding-left: 30px;
- /* padding: 10px 0px; */
- padding-top: 10px;
- padding-bottom: 10px;
+ /* padding-left: 30px; */
+ padding: 10px 0px;
+ /* padding-top: 10px;
+ padding-bottom: 10px; */
 
  width: 100%;
+ /* max-width: 1200px; */
+ /* width: 1200px; */
 }
 body {
  margin: 0px;
@@ -60,7 +91,7 @@ body {
 }
 .navbar {
  height: 68px;
- width: 100vw;
+ width: 100%;
  background-color: #eff1f3;
  display: flex;
  justify-content: center;
@@ -71,8 +102,8 @@ body {
 }
 
 .container {
- max-width: 1300px;
- width: 1300px;
+ max-width: 1240px;
+ width: 1240px;
  min-width: 10px;
  display: flex;
  justify-content: space-between;
@@ -188,10 +219,11 @@ i {
 
 .card {
  cursor: pointer;
- max-width: 288px;
+ max-width: 284px;
  display: flex;
  flex-direction: column;
  /* align-items: center; */
+ background-color: white;
 
  max-height: 266px;
  /* background-color: aqua; */
