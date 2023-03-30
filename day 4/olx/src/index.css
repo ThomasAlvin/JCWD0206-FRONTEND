@@ -70,3 +70,7 @@ code {
   display: flex;
   justify-content: right;
 }
+.dateinput {
+  display: flex;
+  flex-direction: column;
+}

@@ -5,13 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import TestPage from "./component/test";
 import CustomhooksPage from "./component/customhooks";
-
+import ToDoList from "./component/todolist";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
     <TestPage />
     <CustomhooksPage />
+    <ToDoList />
   </React.StrictMode>
 );
 
