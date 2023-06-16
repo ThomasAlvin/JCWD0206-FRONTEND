@@ -1,309 +1,80 @@
-@media screen and (max-width: 645px) {
- #search,
- #location {
-  display: none;
- }
-}
-@media screen and (min-width: 1241px) {
- .recommend {
-  max-width: 1260px;
- }
- .products {
-  max-width: 1240px;
-  padding-left: 20px;
- }
-}
-
-@media screen and (max-width: 1240px) {
- .products,
- .recommend {
-  max-width: 915px;
- }
-}
-
-@media screen and (max-width: 909px) {
- .products,
- .recommend {
-  max-width: 620px;
- }
- .banner {
-  display: none;
- }
-}
-
-@media screen and (max-width: 599px) {
- .products,
- .recommend {
-  max-width: 288px;
- }
-}
-
-.overflowX {
- overflow-x: scroll;
- scroll-behavior: smooth;
- /* padding: 0px 20px; */
- position: relative;
-}
-
-.tentang {
- justify-content: space-between;
- /* width: 80vw; */
- max-width: 90vw;
- display: flex;
- background-color: #ebeeef;
- display: flex;
-
- font-family: 'Roboto, Oxygen, Ubuntu, Cantarell, ' Open Sans ',' Helvetica Neue
-  ' sans-serif';
- /* padding-bottom: 20px; */
-}
-
-.overflowX::-webkit-scrollbar {
- display: none; /* Safari and Chrome */
-}
-
-.banner {
- margin-top: 20px;
- margin-bottom: 20px;
-
- height: 252px;
- width: 100%;
- background-position: 50% 50%;
- background-size: cover;
- background-repeat: no-repeat;
- background-image: url('https://statics.olx.co.id/external/base/img/hero_bg_id.jpg');
-}
-
-.recommend {
- font-size: 24px;
- /* padding-left: 30px; */
- padding: 10px 0px;
- /* padding-top: 10px;
- padding-bottom: 10px; */
-
- width: 100%;
- /* max-width: 1200px; */
- /* width: 1200px; */
-}
 body {
- margin: 0px;
- /* width: 1920px; */
+  margin: 0px;
 }
 .navbar {
- height: 68px;
- width: 100%;
- background-color: #eff1f3;
- display: flex;
- justify-content: center;
- align-items: center;
- position: sticky;
- top: 0;
- z-index: 1;
+  height: 68px;
+  width: 100vw;
+  background-color: #eff1f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .container {
- max-width: 1240px;
- width: 1240px;
- min-width: 10px;
- display: flex;
- justify-content: space-between;
- flex: auto;
- gap: 20px;
+  max-width: 1300px;
+  display: flex;
+  gap: 20px;
 }
 .logo {
- display: flex;
- justify-content: center;
- align-items: center;
- width: 48px;
- cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  /* height: 48px; */
 }
 
 .flex {
- display: flex;
- min-width: 20px;
+  display: flex;
 }
 .input-icon {
- display: flex;
- background-color: white;
- border: 2px solid #002f34;
- border-radius: 3px;
- height: 44px;
- min-width: 0;
-
- flex: 1;
+  display: flex;
+  background-color: white;
+  border: 2px solid #002f34;
+  border-radius: 3px;
+  height: 44px;
 }
-.strech {
- width: 100vw;
- min-width: 20px;
-}
-
 .icon {
- display: flex;
- align-items: center;
- padding-left: 10px;
- padding-right: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 input {
- border: none;
- outline: none;
- padding-left: 10px;
- color: #002f34;
- font-size: 16px;
- position: relative;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  color: #002f34;
+  font-size: 16px;
 }
-
 input:focus + .arrow {
- transform: rotate(180deg);
- transition-duration: 0.5s;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
 }
 .input-icon:has(input:focus) {
- border: 2px solid #23e5db;
+  border: 2px solid #23e5db;
 }
 .search {
- height: 44px;
- background-color: #002f34;
- color: white;
-}
-
-.hidden {
- display: none;
+  /* sadsada */
+  height: 44px;
+  background-color: #002f34;
+  color: white;
 }
 .input-search {
- width: 100%;
- position: relative;
+  width: 634px;
 }
 .login {
- display: flex;
- justify-content: center;
- align-items: center;
- font-family: Arial, Helvetica, sans-serif;
- font-size: 16px;
- text-decoration: underline;
- font-weight: bold;
- color: #002f34;
- height: 48px;
- padding: 0px 7px;
- cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #002f34;
+  height: 48px;
 }
 .jual {
- display: flex;
- height: 48px;
- width: 109px;
- cursor: pointer;
-}
-i {
- cursor: pointer;
-}
-
-.products {
- /* background-color: red; */
- /* padding: 0px 20px; */
-
- /* display: grid; */
- /* grid-template-columns: repeat(4, 1fr); */
- /* grid-column-gap: 20px; */
- /* grid-row-gap: 20px; */
- /* padding: 20px 0px; */
- /* padding-left: 20px; */
- gap: 20px;
- display: flex;
- /* width: max-content; */
- /* width: 100%; */
- width: 1240px;
- justify-content: flex-start;
- margin: 0 auto;
-
- /* min-width: 0; */
- flex-wrap: wrap;
-}
-
-.card {
- cursor: pointer;
- max-width: 284px;
- display: flex;
- flex-direction: column;
- /* align-items: center; */
- background-color: white;
-
- max-height: 266px;
- /* background-color: aqua; */
- border: 1.5px solid #cfcdcd;
- border-radius: 5px;
- align-items: center;
-}
-
-.product-image {
- padding: 9px 0px 7px 0px;
- display: flex;
- max-width: 288px;
- width: 288px;
- gap: 5px;
- max-height: 160px;
- justify-content: center;
-}
-.logo2 {
- display: flex;
- justify-content: space-between;
- position: absolute;
- max-width: 268;
- width: 268px;
- padding-top: 15px;
-}
-
-.product-image img {
- aspect-ratio: auto 4 / 3; /* width:height, unless it's a replaced element */
- height: 'auto';
- max-height: 100%;
- max-width: 270px;
-
- width: fit-content;
-}
-
-.border-yellow {
- display: flex;
- padding: 0px 0px 9px 0px;
- border-left: 5px solid #ffce32;
- justify-content: center;
- border-bottom-left-radius: 3px;
- /* width: '100%'; */
- width: 283px;
-}
-
-.highlight {
- font-weight: 600;
- height: 19.5px;
- width: 68px;
- display: flex;
- align-items: center;
- justify-content: center;
- background-color: #ffce32;
- /* border: 2px solid #e78737; */
- font-size: 10px;
-}
-
-.sub-product {
- display: flex;
- flex-direction: column;
- max-width: 234px;
- width: 234px;
-}
-
-.product-harga {
- font-size: 20px;
- font-weight: bold;
-}
-.product-name {
- font-size: 14px;
- color: #002f34a3;
-}
-.product-year {
- font-size: 14px;
- color: #002f34;
-}
-
-.product-footer {
- color: #002f34a3;
- font-size: 10px;
- display: flex;
- justify-content: space-between;
+  display: flex;
+  height: 48px;
+  width: 109px;
 }
