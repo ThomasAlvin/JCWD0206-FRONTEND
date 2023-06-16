@@ -1,0 +1,238 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "Email": "Thomasalvinyeo@gmail.com",
+      "password": "loltolol"
+    },
+    {
+      "id": 2,
+      "Email": "Thomasalvinyeo@gmail.com",
+      "password": "loltolol"
+    },
+    {
+      "id": 3,
+      "Email": "Thomasalvinyeo@gmail.com",
+      "password": "loltolol"
+    },
+    {
+      "id": 4,
+      "Email": "Thomasalvinyeo@gmail.com",
+      "password": "loltolol"
+    },
+    {
+      "test@mail.com": "",
+      "id": 5
+    },
+    {
+      "email": "generexgt@gmail.com",
+      "password": "S#ED4rada",
+      "username": "2231034",
+      "gender": "",
+      "birthdate": "2000-01-11T17:00:00.000Z",
+      "id": 6
+    },
+    {
+      "email": "test@mail.com",
+      "password": "lolt0l@lloL",
+      "username": "Thomas Alvin Yeo",
+      "gender": "",
+      "birthdate": "2000-07-16T17:00:00.000Z",
+      "id": 7
+    },
+    {
+      "email": "test@mail.coma",
+      "password": "sasasas34@E",
+      "username": "saa",
+      "gender": "Prefer-not-to-say",
+      "birthdate": "1222-06-16T17:17:56.000Z",
+      "id": 8
+    },
+    {
+      "email": "test@mail.comaa",
+      "password": "12121DEd$",
+      "username": "sasa",
+      "gender": "",
+      "birthdate": "1111-10-11T17:17:56.000Z",
+      "id": 9
+    },
+    {
+      "email": "Thomasalvinyeo@gmail.coma",
+      "password": "12dE#gas",
+      "username": "saaaa",
+      "gender": "",
+      "birthdate": "1222-04-16T17:17:56.000Z",
+      "id": 10
+    },
+    {
+      "email": "kue@gmail.com",
+      "password": "hgy5ey5E##",
+      "username": "hgh",
+      "gender": "",
+      "birthdate": "2000-02-16T17:00:00.000Z",
+      "id": 11
+    },
+    {
+      "email": "test2@mail.com",
+      "password": "thomasDD$$@H2",
+      "username": "sff",
+      "gender": "Non-binary",
+      "birthdate": "2001-04-16T17:00:00.000Z",
+      "id": 12
+    },
+    {
+      "email": "test23@mail.com",
+      "password": "D#432eddd",
+      "username": "2231034",
+      "gender": "",
+      "birthdate": "2000-04-11T17:00:00.000Z",
+      "id": 13
+    }
+  ],
+  "musics": [
+    {
+      "Id": 1,
+      "type": "",
+      "createdby": "spotify",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOmPEQv2PSyFreXRMCj_S6tXhMFGVlPYIvGg&usqp=CAU",
+      "title": "Attack of the killer queen",
+      "creator": "Toby Fox",
+      "src": "attack-of-the-killer-queen.mp3"
+    },
+    {
+      "Id": 2,
+      "type": "",
+      "createdby": "spotify",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJlyvOEg6MPgPJYE9YdR_srBqMj44OHun39g&usqp=CAU",
+      "title": "Chaos-king",
+      "creator": "Toby Fox",
+      "src": "Chaos-King.mp3"
+    },
+    {
+      "Id": 3,
+      "type": "",
+      "createdby": "spotify",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3hRiBpwZRR72AhFK-JjBZFsFTMHtdtIEzfQ&usqp=CAU",
+      "title": "Hopes-and-dreams",
+      "creator": "Toby Fox",
+      "src": "Hopes-and-dreams.mp3"
+    },
+    {
+      "Id": 4,
+      "type": "",
+      "createdby": "spotify",
+      "image": "https://i2.wp.com/img.youtube.com/vi/YykjpeuMNEk/0.jpg?resize=200,200",
+      "title": "Hymn-for-the-weekend",
+      "creator": "Coldplay",
+      "src": "Hymn-for-the-weekend.mp3"
+    },
+    {
+      "Id": 5,
+      "type": "",
+      "createdby": "spotify",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdtbod1311ktlqW9-_KmSFfyTPOT2W-jfFkw&usqp=CAU",
+      "title": "Battle-against-a-true-hero",
+      "creator": "Toby Fox",
+      "src": "Battle-Against-A-True-Hero.mp3"
+    },
+    {
+      "Id": 6,
+      "type": "",
+      "createdby": "spotify",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcLpF2gsvqOc0Zn2LfN2JHTJafPvHNFW9kWw&usqp=CAU",
+      "title": "Death-by-glamour",
+      "creator": "Toby Fox",
+      "src": "Death-By-Glamour.mp3"
+    },
+    {
+      "Id": 7,
+      "type": "",
+      "createdby": "spotify",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBDodpTBW14Byym38zbDhsg5NYn1H65LV5fg&usqp=CAU",
+      "title": "Spider-dance",
+      "creator": "Toby Fox",
+      "src": "Spider-Dance.mp3"
+    }
+  ],
+  "Playlist": [
+    {
+      "id": 1,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzy6Jt0ZhsA6clGf31uHZtwoHVfuuJKIceYA&usqp=CAU",
+      "name": "Toby-Fox",
+      "creator": "Undertale",
+      "list": [
+        {
+          "Id": 1,
+          "type": "",
+          "createdby": "spotify",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOmPEQv2PSyFreXRMCj_S6tXhMFGVlPYIvGg&usqp=CAU",
+          "title": "Attack of the killer queen",
+          "creator": "Toby Fox",
+          "src": "attack-of-the-killer-queen.mp3"
+        },
+        {
+          "Id": 2,
+          "type": "",
+          "createdby": "spotify",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJlyvOEg6MPgPJYE9YdR_srBqMj44OHun39g&usqp=CAU",
+          "title": "Chaos-king",
+          "creator": "Toby Fox",
+          "src": "Chaos-King.mp3"
+        },
+        {
+          "Id": 3,
+          "type": "",
+          "createdby": "spotify",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3hRiBpwZRR72AhFK-JjBZFsFTMHtdtIEzfQ&usqp=CAU",
+          "title": "Hopes-and-dreams",
+          "creator": "Toby Fox",
+          "src": "Hopes-and-dreams.mp3"
+        },
+        {
+          "Id": 4,
+          "type": "",
+          "createdby": "spotify",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdtbod1311ktlqW9-_KmSFfyTPOT2W-jfFkw&usqp=CAU",
+          "title": "Battle-against-a-true-hero",
+          "creator": "Toby Fox",
+          "src": "Battle-Against-A-True-Hero.mp3"
+        },
+        {
+          "Id": 5,
+          "type": "",
+          "createdby": "spotify",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcLpF2gsvqOc0Zn2LfN2JHTJafPvHNFW9kWw&usqp=CAU",
+          "title": "Death-by-glamour",
+          "creator": "Toby Fox",
+          "src": "Death-By-Glamour.mp3"
+        },
+        {
+          "Id": 6,
+          "type": "",
+          "createdby": "spotify",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBDodpTBW14Byym38zbDhsg5NYn1H65LV5fg&usqp=CAU",
+          "title": "Spider-dance",
+          "creator": "Toby Fox",
+          "src": "Spider-Dance.mp3"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH-_rNoAlnYgNf_NZPT-eEEpgtI-nvxzHayQ&usqp=CAU",
+      "name": "ColdPlay Songs",
+      "creator": "ColdPlay",
+      "list": [
+        {
+          "Id": 1,
+          "type": "",
+          "createdby": "spotify",
+          "image": "https://i2.wp.com/img.youtube.com/vi/YykjpeuMNEk/0.jpg?resize=200,200",
+          "title": "Hymn-for-the-weekend",
+          "creator": "Coldplay",
+          "src": "Hymn-for-the-weekend.mp3"
+        }
+      ]
+    }
+  ]
+}

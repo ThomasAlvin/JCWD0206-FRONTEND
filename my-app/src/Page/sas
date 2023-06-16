@@ -1,0 +1,150 @@
+const formik = useFormik({
+    intitialValues: {
+      email: "",
+      email2: "",
+      password: "",
+      username: "",
+      day: 0,
+      month: 0,
+      year: 0,
+      gender: "",
+      marketingmessage: "",
+      datamarketing: "",
+    },
+    validationSchema: Yup.object().shape({
+      email: Yup.string().required("Please enter your Email"),
+    }),
+    onSubmit: async () => {
+      // console.log(formik.values);
+      const { email, name, password, day, month, year, gender } = formik.values;
+      const account = { email, name, password, gender };
+      account.birthdate = new Date(year, month, day);
+      const user = { ...formik.values };
+
+      user.birthdate = new Date(user.year, user.month, user.day);
+      const checkEmail = await axios
+        .get("http://localhost:2000/user", { params: { email: account.email } })
+        .then((res) => {
+          if (res.data.length) {
+            return true;
+          } else {
+            return false;
+          }
+        });
+      if (checkEmail) {
+        return alert("email is already used");
+      } else {
+        await axios.post("http://localhost:2000/user", account).then((res) => {
+          nav("/login");
+        });
+      }
+      console.log(user);
+    },
+  });
+
+
+  const formika = useFormik({
+    initialValues: {
+      email: "",
+      email2: "",
+      password: "",
+      password2: "",
+      name: "",
+      day: 0,
+      month: 0,
+      year: 0,
+      gender: "",
+      marketingmessage: "",
+      datamarketing: "",
+    },
+    validationSchema: Yup.object().shape({
+      email: Yup.string()
+        .required("You need to enter your email")
+        .email(
+          "This email is invalid. Make sure it's written like example@email.com"
+        ),
+      email2: Yup.string()
+        .required("You need to confirm your email")
+        .oneOf([Yup.ref("email"), null], "The email addresses don't match"),
+      name: Yup.string().required("You need to enter your email"),
+      password: Yup.string()
+        .required(
+          <Flex>
+            <Center>Please enter your password</Center>
+          </Flex>
+        )
+        .minUppercase(
+          1,
+          "Your password needs atleast 1 uppercase letter, 1 number, and 1 symbol with atleast 8 characters"
+        )
+        .minNumbers(
+          1,
+          "Your password needs atleast 1 uppercase letter, 1 number, and 1 symbol with atleast 8 characters"
+        )
+        .minSymbols(
+          1,
+          "Your password needs atleast 1 uppercase letter, 1 number, and 1 symbol with atleast 8 characters"
+        )
+        .min(
+          8,
+          "Your password needs atleast 1 uppercase letter, 1 number, and 1 symbol with atleast 8 characters"
+        ),
+      password2: Yup.string()
+        .required("You need to confirm your password")
+        .oneOf([Yup.ref("password"), null], "the passwords don't match"),
+      name: Yup.string().required("You need to enter your username"),
+      day: Yup.number()
+        .lessThan(32, "Must be less than 32")
+        .moreThan(
+          0,
+          <Flex>
+            <Center>
+              {" "}
+              <Icon as={TbAlertCircleFilled} w={"16px"} h={"16px"}></Icon>
+              <Box>Enter a valid date</Box>
+            </Center>
+          </Flex>
+        ),
+
+      month: Yup.number().required("whre ur motnh"),
+      year: Yup.number()
+        .lessThan(2023, "Must be less than 32")
+        .moreThan(
+          0,
+          <Flex>
+            <Center>
+              {" "}
+              <Icon as={TbAlertCircleFilled} w={"16px"} h={"16px"}></Icon>
+              <Box>Enter a valid date</Box>
+            </Center>
+          </Flex>
+        ),
+      gender: Yup.string().required("lol"),
+    }),
+    onSubmit: async () => {
+      // console.log(formik.values);
+      const { email, name, password, day, month, year, gender } = formik.values;
+      const account = { email, name, password, gender };
+      account.birthdate = new Date(year, month, day);
+      const user = { ...formik.values };
+
+      user.birthdate = new Date(user.year, user.month, user.day);
+      const checkEmail = await axios
+        .get("http://localhost:2000/user", { params: { email: account.email } })
+        .then((res) => {
+          if (res.data.length) {
+            return true;
+          } else {
+            return false;
+          }
+        });
+      if (checkEmail) {
+        return alert("email is already used");
+      } else {
+        await axios.post("http://localhost:2000/user", account).then((res) => {
+          nav("/login");
+        });
+      }
+      console.log(user);
+    },
+  });
